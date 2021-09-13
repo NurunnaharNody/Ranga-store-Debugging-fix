@@ -2,6 +2,16 @@ body {
   overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
 }
+    /* shop title style  */
+.title{
+  padding: 10px;
+  margin: auto;
+  color:rgb(18, 2, 63);
+  text-align: center;
+  font-weight: 900;
+  font-size: 45px;
+}
+       /* input field styles  */
 .search-field {
   border: none;
   border-radius: 50px;
@@ -13,18 +23,22 @@ body {
   border: none;
 }
 .search-box {
-  border: 1px solid rgb(3, 118, 211);
-  width: 281px;
+  border: 1px solid rgb(0, 55, 100);
+  width: 381px;
   border-radius: 5px;
   margin: auto;
-  margin-top: 50px;
+  margin-top: 30px;
+  margin-bottom: 10px;
   border-right: none;
 }
 .search-button {
   padding: 10px 50px;
   border-radius: 25px;
-  margin-left: 20px;
+  margin-left: 125px;
+  color: white;
+  background-color: rgb(18, 2, 63);
 }
+    /* all products style  */
 #all-products {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -35,20 +49,51 @@ body {
   align-items: center;
   justify-content: center;
 }
+    /* single product styles  */
 .single-product {
+  margin: 15px;
+  height:475px;
   padding: 10px;
+  background-color: rgba(216, 216, 250, 0.493);
+  border-radius: 10px;
+  box-shadow: 4px 4px 9px rgb(163, 161, 161);
   transition: 0.6s;
 }
 .single-product:hover {
-  box-shadow: 4px 4px 7px gray;
-  border-radius: 10px;
-  border: 1px solid cyan;
+  box-shadow: px 9px 12px rgb(163, 161, 161);
+  border: 1px solid rgb(184, 228, 228);
 }
 .product-image {
   width: 150px;
   height: 150px;
 }
+.product-title {
+   font-size:large;
+   font-weight: bold;
+}
+ .icon-color{
+   color: rgb(248, 183, 18);
+   font-size:small;
+ }
+ .icon-detail{
+   font-weight: bolder;
+ }
+ .product-price{
+   font-size: 25px;
+ }
+ .buy-now{
+   background-color: rgb(6, 6, 7);
+   color: white;
+   font-weight: bolder;
+ }
+ .btn-detail{
+  background-color: rgb(221, 43, 82);
+  color: white;
+  font-weight: bolder;
+ }
+   /* cart styles  */
 .cart {
+  background-color:rgb(189, 189, 236);
   width: 350px;
   /* border: 1px solid green; */
   padding: 10px;
@@ -60,6 +105,7 @@ body {
 .cart-main {
   padding-right: 30px;
 }
+    /* styles for responsive site  */
 @media only screen and (max-width: 768px) {
   #all-products {
     display: grid;
