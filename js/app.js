@@ -83,5 +83,4 @@ const updateTotal = () => {
     getInputValue("total-tax");
   document.getElementById("total").innerText = parseFloat(grandTotal).toFixed(2);
 };
-updateTotal();
 loadProducts();
